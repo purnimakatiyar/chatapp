@@ -1,0 +1,64 @@
+.logo{
+    display: block;
+    margin: auto;
+    height: 60px;
+    width: 60px;
+}
+body {
+    height: 100vh;
+    background-color: rgb(165, 170, 197);
+    
+    background-image: radial-gradient(
+        rgb(188, 241, 185),
+        rgb(255, 252, 174),
+        rgb(116, 246, 170)
+      );
+  }
+
+  #message-container {
+    width: 100%;
+    align-items: center;
+    max-width: 800px;
+    justify-content: center;
+    margin-left: 250px;
+  }
+
+  #message-container div {
+    background-color: rgb(127, 244, 160);
+    padding: 5px;
+    align-items: left;
+  }
+
+  #message-container div:nth-child(2n) {
+    background-color: rgb(255, 250, 177);
+  }
+    
+
+  #send-container {
+    width: 100%;
+    display: block;
+    position: relative;
+   
+    top: 2%;
+    text-align: center;
+  }
+
+  #message-input {
+    flex-grow: 1;
+ 
+    
+      
+  }
+
+  .btn {
+    border-radius: 6px;
+    border: 2px solid rgb(4, 4, 4);
+    background-color: rgb(113, 231, 9);
+    position: relative;
+  }
+
+  h1{
+    color: rgb(0, 94, 37);
+    font-family: 'Fredoka One', cursive;
+
+  }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav>
+    <img class="logo" src="chat1.png" alt="OnChat">
+    <h1 align="center">Welcome to OnChat App</h1>
+  </nav>
+  <div id="message-container"></div>
+  <form id="send-container">
+    <input type="text" name="message-input" id="message-input">
+    <script>
+      $(document).ready(function () {
+          $("#message-input").emojioneArea({
+              pickerPosition: "top",
+
+          });
+      })
+  </script>
+    <button class="btn" type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Send</button>
+  </form>
+</body>
+</html>
